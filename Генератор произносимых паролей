@@ -1,0 +1,25 @@
+SiZE = 6
+
+asd = "ghj"
+
+soglasnie = "BCDFGHKLMNPQRSTVXZ"
+
+glasnie = "AEIOUY"
+
+password = []
+
+k = 1
+
+for i in 0..5 do
+
+if k%2 == 0 then password[i] = glasnie[rand(glasnie.size)] end
+ 
+if k%2 != 0 then password[i] = soglasnie[rand(soglasnie.size)] end
+
+k += 1
+
+end
+
+print password
+
+STDIN.getc
