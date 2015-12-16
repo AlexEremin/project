@@ -12,9 +12,7 @@ class Passworgenerator
 
   def generation(size)
 
-
     vowel = [true,false].sample
-
     size.times do |x|
         
       @password << Passworgenerator::VOWELS.sample if vowel
